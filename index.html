@@ -80,49 +80,47 @@
 	
 			</fieldset>
 		</div>
-		<section>
-			<div id="media">
-				<div class="videodiv remotevid">
-					<p class="vidtitle remvidtitle">Remote Video</p>
-					<video id="remoteVideo"></video>
+		<br>
+		<div id="media">
+			<div class="videodiv remotevid">
+				<p class="vidtitle remvidtitle">Remote Video</p>
+				<video id="remoteVideo"></video>
+			</div>
+			<div class="videodiv localvid">
+				<div><p class="vidtitle locvidtitle">Local Video</p></div>
+				<video id="localVideo"></video>
+			</div>
+		</div>
+		<br>
+		<div class="userMedia" id="localMediaControls">			    
+			<fieldset>	
+				<legend>Local Media Controls</legend>	            		
+				<div id="muteControls" class="controls-set">
+					<table class="widget-crl">
+						<tr><td class="table-label" style="font-family: ProximaNova_Bold;">Mute Options:</td>
+							<td>
+								<button class="controls" id="toggleVideoMute">Mute Video</button>
+								<button class="controls" id="toggleAudioMute">Mute Audio</button>
+							</td>
+						</tr>
+						<tr><td class="table-label">Volume:</td>
+							<td><input type="text" class="mtginputs" id="volume" value=0 readonly></td>
+						</tr>
+					</table>
+					
+				</div>		
+			</fieldset>
+		</div>
+		<div class="userMedia" id="contentShare">
+			<div class="videodiv contentdiv" style="overflow:hidden;">
+				<p class="vidtitle remvidtitle">Content Share</p>
+				<div class="novideo" id="noshare">
+					<img id="noContent" class="offair" src="media/BlueJeans_Mark.png" />
+					<video id="contentVideo"></video>
 				</div>
-				<div class="videodiv localvid">
-					<div><p class="vidtitle locvidtitle">Local Video</p></div>
-					<video id="localVideo"></video>
-				</div>
-		    </div>
-		</section>
-		<section style="padding-top: 0px;">
-		    <div class="userMedia" id="localMediaControls">			    
-		        <fieldset>	
-			        <legend>Local Media Controls</legend>	            		
-		            <div id="muteControls" class="controls-set">
-		                <table class="widget-crl">
-			                <tr><td class="table-label" style="font-family: ProximaNova_Bold;">Mute Options:</td>
-		                        <td>
-			                        <button class="controls" id="toggleVideoMute">Mute Video</button>
-									<button class="controls" id="toggleAudioMute">Mute Audio</button>
-								</td>
-		                    </tr>
-		                	<tr><td class="table-label">Volume:</td>
-		                        <td><input type="text" class="mtginputs" id="volume" value=0 readonly></td>
-		                    </tr>
-		                </table>
-		                
-		            </div>		
-		        </fieldset>
-		    </div>
-			<div class="userMedia" id="contentShare">
-				<div class="videodiv contentdiv" style="overflow:hidden;">
-					<p class="vidtitle remvidtitle">Content Share</p>
-					<div class="novideo" id="noshare">
-						<img id="noContent" class="offair" src="media/BlueJeans_Mark.png" />
-						<video id="contentVideo"></video>
-					</div>
-				</div>
-			</div>			
-		    <div class="clear"></div>
-		</section>
+			</div>
+		</div>			
+		<div class="clear"></div>
 	</div>
 	<footer>
 		<div class="copyright">
