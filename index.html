@@ -8,20 +8,14 @@
 </head>
 
 <body>
-	<!--<header>
-		    -->
-					
-		            <!--</div>-->
-		    <!--</div>
-	</header>-->
 	<div class="container">
 		<div class="control-btn-row center">
 			<button class="controls center" id="toggle-meeting-details" onclick="toggleMeetingDetails()">Toggle Meeting Details</button>
 		</div>
-		<br>
-		<div class="userMedia" id="joinMeetingControls" style="width:100%">
-			<div id="callControls" class="controls-set" style="width:100%">
-				<div id="meetingDetails">
+		<div class="userMedia" id="joinMeetingControls">
+			<fieldset>
+				<legend>Join Meeting Controls</legend>
+				<div id="callControls" class="controls-set">
 					<table style="width:100%">
 						<tr>
 							<td class="table-label">Meeting ID:</td>
@@ -83,20 +77,20 @@
 						</tr>
 					</table>
 				</div>
-			</div>
-		</div>
-		<br>
-		<div id="media">
-			<div class="videodiv remotevid">
-				<p class="vidtitle remvidtitle">Remote Video</p>
-				<video id="remoteVideo"></video>
-			</div>
-			<div class="videodiv localvid" style="width:300px;">
-				<div><p class="vidtitle locvidtitle">Local Video</p></div>
-				<video id="localVideo"></video>
-			</div>
+	
+			</fieldset>
 		</div>
 		<section>
+			<div id="media">
+				<div class="videodiv remotevid">
+					<p class="vidtitle remvidtitle">Remote Video</p>
+					<video id="remoteVideo"></video>
+				</div>
+				<div class="videodiv localvid">
+					<div><p class="vidtitle locvidtitle">Local Video</p></div>
+					<video id="localVideo"></video>
+				</div>
+		    </div>
 		</section>
 		<section style="padding-top: 0px;">
 		    <div class="userMedia" id="localMediaControls">			    
@@ -147,14 +141,13 @@
 <script type="text/javascript">
     // create global BJN sdk object
     var BJN = {
-
     };
     var d = new Date();
 	var n = d.getFullYear();
 	$("#curr_year").text(n);
 	
 	function toggleMeetingDetails() {
-		var x = document.getElementById("meetingDetails");
+		var x = document.getElementById("joinMeetingControls");
 		if (x.style.display === "none") {
 			x.style.display = "block";
 		} else {
