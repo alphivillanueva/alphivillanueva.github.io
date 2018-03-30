@@ -294,13 +294,11 @@ button:focus {
 #toggle-meeting-details{
 	background-color: #3bca7c;
 	color: white;
-	margin-right: 10px;
 }
 
 #joinMeeting{
 	background-color: #3bca7c;
 	color: white;
-	margin-right: 10px;
 }
 #joinMeeting:hover {
 }
