@@ -262,6 +262,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 }
 .control-btn-row {
 	margin-top: 20px;
+	width: 200px;
 }
 
 .center{
@@ -277,6 +278,7 @@ button.controls {
 	display: inline-block;
 	border: 0;
 	cursor: pointer;
+	width: 200px;
 }
 button:focus {
 	border: 0;
