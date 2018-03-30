@@ -263,6 +263,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 .control-btn-row {
 	margin: auto;
 	margin-top: 20px;
+	width: 25%;
 }
 button.controls {
 	padding: 10px 20px;
