@@ -261,10 +261,13 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	text-align: left;
 }
 .control-btn-row {
-	margin: auto;
 	margin-top: 20px;
-	width: 25%;
 }
+
+.center{
+	margin: auto;
+}
+
 button.controls {
 	padding: 10px 20px;
 	border-radius: 5px;
