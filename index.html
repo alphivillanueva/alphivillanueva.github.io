@@ -16,7 +16,7 @@
 		    <!--</div>
 	</header>-->
 	<div class="control-btn-row center">
-		<button class="controls center" id="hidemeetingdetails" onclick="hideMeetingDetails()">Show/Hide</button>
+		<button class="controls center" id="toggle-meeting-details" onclick="toggleMeetingDetails()">Show/Hide Meeting Details</button>
 	</div>
 	<div id="meetingDetails">
 		<table style="width:100%">
@@ -148,7 +148,7 @@
 	var n = d.getFullYear();
 	$("#curr_year").text(n);
 	
-	function hideMeetingDetails() {
+	function toggleMeetingDetails() {
 		var x = document.getElementById("meetingDetails");
 		if (x.style.display === "none") {
 			x.style.display = "block";
