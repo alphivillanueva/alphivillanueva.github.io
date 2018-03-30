@@ -9,8 +9,7 @@
 
 <body>
 	<!--<header>
-		    <div class="userMedia" id="joinMeetingControls">-->
-		            <!--<div id="callControls" class="controls-set">-->
+		    -->
 					
 		            <!--</div>-->
 		    <!--</div>
@@ -18,67 +17,71 @@
 	<div class="control-btn-row center">
 		<button class="controls center" id="toggle-meeting-details" onclick="toggleMeetingDetails()">Toggle Meeting Details</button>
 	</div>
-	<div id="meetingDetails">
-		<table style="width:100%">
-			<tr>
-				<td class="table-label">Meeting ID:</td>
-				<td><input placeholder="Enter Meeting ID" type="text" class="mtginputs" id="id" name="Meeting id"></td>
-				<td>
-				<td class="table-label">Camera:</td>
-				<td>
-					<select id="videoIn" class="mtginputs">
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td class="table-label">PassCode:</td>
-				<td><input type="text" placeholder="Enter PassCode" class="mtginputs" id="passCode" name="PassCode" ></td>
-				<td>
-				<td class="table-label">Video Quality:</td>
-				<td>
-					<select id="videoBw" class="mtginputs">
-						<option value="4096">HD (4096 Kbps)</option>
-						<option value="2048">Very Hi (2048 Kbps)</option>
-						<option value="1500" selected>Hi (1500 Kbps)</option>
-						<option value="1024">Mid (1024 Kbps)</option>
-						<option value="512">Eco (512 Kbps)</option>
-						<option value="100">Low (100 Kbps)</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td class="table-label">Your Name:</td>
-				<td>
-					<input placeholder="Enter your name" type="text" class="mtginputs" 
-							id="yourName" name="yourName">
-				</td>
-				<td></td>
-				<td class="table-label">Microphone:</td>
-				<td>
-					<select id="audioIn" class="mtginputs">
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>
-				</td>
-				<td></td>
-				<td class="table-label">Speaker:</td>
-				<td>
-					<select id="audioOut" class="mtginputs">
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="5">
-					<div class="control-btn-row center">
-						<button class="controls center" id="joinMeeting">Join Meeting</button>
-						<button class="controls center hidden" id="leaveMeeting">End Meeting</button>
-					</div>
-				</td>
-			</tr>
-		</table>
+	<div class="userMedia" id="joinMeetingControls">-->
+		            <div id="callControls" class="controls-set">
+			<div id="meetingDetails">
+				<table style="width:100%">
+					<tr>
+						<td class="table-label">Meeting ID:</td>
+						<td><input placeholder="Enter Meeting ID" type="text" class="mtginputs" id="id" name="Meeting id"></td>
+						<td>
+						<td class="table-label">Camera:</td>
+						<td>
+							<select id="videoIn" class="mtginputs">
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="table-label">PassCode:</td>
+						<td><input type="text" placeholder="Enter PassCode" class="mtginputs" id="passCode" name="PassCode" ></td>
+						<td>
+						<td class="table-label">Video Quality:</td>
+						<td>
+							<select id="videoBw" class="mtginputs">
+								<option value="4096">HD (4096 Kbps)</option>
+								<option value="2048">Very Hi (2048 Kbps)</option>
+								<option value="1500" selected>Hi (1500 Kbps)</option>
+								<option value="1024">Mid (1024 Kbps)</option>
+								<option value="512">Eco (512 Kbps)</option>
+								<option value="100">Low (100 Kbps)</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td class="table-label">Your Name:</td>
+						<td>
+							<input placeholder="Enter your name" type="text" class="mtginputs" 
+									id="yourName" name="yourName">
+						</td>
+						<td></td>
+						<td class="table-label">Microphone:</td>
+						<td>
+							<select id="audioIn" class="mtginputs">
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+						</td>
+						<td></td>
+						<td class="table-label">Speaker:</td>
+						<td>
+							<select id="audioOut" class="mtginputs">
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="5">
+							<div class="control-btn-row center">
+								<button class="controls center" id="joinMeeting">Join Meeting</button>
+								<button class="controls center hidden" id="leaveMeeting">End Meeting</button>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
 	</div>
 	<div class="container">
 		<section>
