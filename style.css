@@ -261,7 +261,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	text-align: left;
 }
 .control-btn-row {
-	margin-top: 20px;
+	margin-top: 2px;
 	width: 200px;
 }
 
@@ -270,7 +270,6 @@ input:focus:-ms-input-placeholder { color:transparent; }
 }
 
 button.controls {
-	padding: 10px 20px;
 	border-radius: 5px;
 	color: white;
 	font-size: 14px;
