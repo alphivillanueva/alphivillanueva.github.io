@@ -9,9 +9,68 @@
 
 <body>
 	<header>
-		<div class="header-bar">
-			<p>WebRTC Experiments</p>
-		</div>
+		    <div class="userMedia" id="joinMeetingControls">
+		        <fieldset>
+		            <legend>Join Meeting Controls</legend>
+		            <div id="callControls" class="controls-set">
+						<table>
+							<tr>
+								<td>
+									<table class="widget-crl">
+										<tr><td class="table-label">Meeting ID:</td>
+											<td><input placeholder="Enter Meeting ID" type="text" class="mtginputs" id="id" name="Meeting id"></td>
+										</tr>
+										<tr><td class="table-label">PassCode:</td>
+											<td><input type="text" placeholder="Enter PassCode" class="mtginputs" id="passCode" name="PassCode" ></td>
+										</tr>
+										<tr><td class="table-label">Your Name:</td>
+											<td><input placeholder="Enter your name" type="text" class="mtginputs" 
+											id="yourName" name="yourName"
+											value="WebRTC User"></td>
+										</tr>
+									</table>
+									<div class="control-btn-row">
+										<button class="controls" id="joinMeeting">Join Meeting</button>
+										<button class="controls hidden" id="leaveMeeting">End Meeting</button>
+									</div>
+								</td>
+								<td>
+									<table class="widget-crl">
+										<tr><td class="table-label">Camera:</td>
+										<td><select id="videoIn">
+					
+											</select></td>
+										</tr>
+										<tr>
+										  <td class="table-label">Video Quality:</td>
+										  <td><select id="videoBw">
+											<option value="4096">HD (4096 Kbps)</option>
+											<option value="2048">Very Hi (2048 Kbps)</option>
+											<option value="1500">Hi (1500 Kbps)</option>
+											<option value="1024">Mid (1024 Kbps)</option>
+											<option value="512" selected>Eco (512 Kbps)</option>
+											<option value="100">Low (100 Kbps)</option>
+											</select>
+										  </td>
+										</tr>
+										<tr><td class="table-label">Microphone:</td>
+										<td><select id="audioIn">
+											</select></td>
+										</tr>
+					
+										<tr><td class="table-label">Speaker:</td>
+										<td><select id="audioOut">
+					
+											</select></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+		            </div>
+		
+		        </fieldset>
+		    </div>
 	</header>
 	<div class="container">
 		<section>
@@ -44,58 +103,6 @@
 		                </table>
 		                
 		            </div>		
-		        </fieldset>
-		    </div>
-		    <div class="userMedia" id="joinMeetingControls">
-		        <fieldset>
-		            <legend>Join Meeting Controls</legend>
-		            <div id="callControls" class="controls-set">
-		                <table class="widget-crl">
-		                    <tr><td class="table-label">Meeting ID:</td>
-		                        <td><input placeholder="Enter Meeting ID" type="text" class="mtginputs" id="id" name="Meeting id"></td>
-		                    </tr>
-							<tr><td class="table-label">PassCode:</td>
-		                        <td><input type="text" placeholder="Enter PassCode" class="mtginputs" id="passCode" name="PassCode" ></td>
-		                    </tr>
-							<tr><td class="table-label">Your Name:</td>
-		                        <td><input placeholder="Enter your name" type="text" class="mtginputs" 
-								id="yourName" name="yourName"
-								value="WebRTC User"></td>
-							</tr>
-							<tr><td class="table-label">Camera:</td>
-		                    <td><select id="videoIn">
-		
-		                        </select></td>
-							</tr>
-							<tr>
-							  <td class="table-label">Video Quality:</td>
-							  <td><select id="videoBw">
-							    <option value="4096">HD (4096 Kbps)</option>
-							    <option value="2048">Very Hi (2048 Kbps)</option>
-							    <option value="1500">Hi (1500 Kbps)</option>
-							    <option value="1024">Mid (1024 Kbps)</option>
-							    <option value="512" selected>Eco (512 Kbps)</option>
-							    <option value="100">Low (100 Kbps)</option>
-								</select>
-							  </td>
-							</tr>
-							<tr><td class="table-label">Microphone:</td>
-		                    <td><select id="audioIn">
-		                        </select></td>
-							</tr>
-		
-		                    <tr><td class="table-label">Speaker:</td>
-		                    <td><select id="audioOut">
-		
-		                        </select></td>
-							</tr>
-		                </table>
-		                <div class="control-btn-row">
-			                <button class="controls" id="joinMeeting">Join Meeting</button>
-			                <button class="controls hidden" id="leaveMeeting">End Meeting</button>
-		                </div>
-		            </div>
-		
 		        </fieldset>
 		    </div>
 			<div class="userMedia" id="contentShare">
