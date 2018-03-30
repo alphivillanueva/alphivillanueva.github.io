@@ -261,6 +261,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	text-align: left;
 }
 .control-btn-row {
+	margin: auto;
 	margin-top: 20px;
 }
 button.controls {
